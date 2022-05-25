@@ -1,0 +1,12 @@
+timestamp, region, serviceName, usageType, usageUnit, vCpus, usageAmount
+2021-03-25T00:00:00.000Z, us-east-1, AmazonS3, USE1-APS3-AWS-Out-Bytes, GB, , 0.00245179589999999
+2021-03-25T00:00:04.000Z, eu-west-1, AWSCloudTrail, EU-FreeEventsRecorded, Events, , 5.22E+07
+2021-03-25T00:00:02.000Z, ap-northeast-1, AmazonSNS, APN1-Requests-Tier1, Requests, , 3682
+2021-03-25T00:00:00.000Z, eu-west-1, AWSCloudTrail1, EU-FreeEventsRecorded1, Events, , 51.22E+07
+2021-03-25T00:00:03.000Z, ap-northeast-1, AmazonSNS1, APN1-Requests-Tier1-1, GB, , 36821
+2021-03-25T00:00:01.000Z, eu-west-1, AWSCloudTrail2, EU-FreeEventsRecorded2, CPU, , 52.22E+07
+9/10/21, ap-northeast-1, AmazonSNS2, APN1-Requests-Tier1-2, X, , 36822
+25/11/21, eu-west-1, AWSCloudTrail3, EU-FreeEventsRecorded3, X1, , 53.22E+07
+25/11/21, ap-northeast-1, AmazonSNS3, APN1-Requests-Tier1-3, GB2, , 36823
+11/25/21, eu-west-1, AWSCloudTrail4, EU-FreeEventsRecorded4, Events2, , 54.22E+07
+11/25/21, ap-northeast-1, AmazonSNS4, APN1-Requests-Tier1-4, Requests3, , 36824

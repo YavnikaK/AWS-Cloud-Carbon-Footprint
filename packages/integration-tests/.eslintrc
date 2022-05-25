@@ -1,0 +1,9 @@
+{
+    "plugins": ["testcafe"],
+    "extends": ["plugin:testcafe/recommended", "prettier", "plugin:prettier/recommended"],
+    "parser": "babel-eslint",
+    "rules": {
+      "@typescript-eslint/no-unused-expressions": "off",
+      "jest/no-done-callback": "off"
+    }
+  }

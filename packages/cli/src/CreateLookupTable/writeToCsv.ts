@@ -1,0 +1,28 @@
+/*
+ * © 2021 Thoughtworks, Inc.
+ */
+import { LookupTableOutput } from '@cloud-carbon-footprint/common'
+import { createObjectCsvWriter } from 'csv-writer'
+
+export async function writeToCsv(
+  outputFileName: string,
+  outputData: LookupTableOutput[],
+) {
+  const csvWriter = createObjectCsvWriter({
+    path: outputFileName,
+    header: [
+      { id: 'timestamp', title: 'timestamp' },
+      { id: 'serviceName', title: 'serviceName' },
+      { id: 'region', title: 'region' },
+      { id: 'usageType', title: 'usageType' },
+      { id: 'usageUnit', title: 'usageUnit' },
+      { id: 'usageAmount', title: 'usageAmount' },
+      { id: 'vCpus', title: 'vCpus' },
+      { id: 'machineType', title: 'machineType' },
+      { id: 'kilowattHours', title: 'kilowattHours' },
+      { id: 'co2e', title: 'co2e' },
+      { id: 'usageTypeClass', title: 'usageTypeClass' },
+    ],
+  })
+  await csvWriter.writeRecords(outputData)
+}

@@ -1,0 +1,44 @@
+2021-11-25T21:42:21.393Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T21:43:00.565Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T21:43:06.702Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:43:06.714Z [cache] info: Using local cache file... 
+2021-11-25T21:43:06.709Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T21:43:08.769Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:46:15.790Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T21:46:24.936Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:46:24.951Z [cache] info: Using local cache file... 
+2021-11-25T21:46:24.945Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T21:46:26.785Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:47:31.673Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:47:31.675Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T21:47:31.676Z [cache] info: Using local cache file... 
+2021-11-25T21:47:32.744Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:49:44.538Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T21:49:51.110Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:49:51.122Z [cache] info: Using local cache file... 
+2021-11-25T21:49:51.118Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T21:49:52.781Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:52:26.475Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:52:26.480Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T21:52:26.480Z [cache] info: Using local cache file... 
+2021-11-25T21:52:27.540Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:53:36.010Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T21:53:40.189Z [api] info: Regions emissions factors API request started 
+2021-11-25T21:53:40.197Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T21:53:40.201Z [cache] info: Using local cache file... 
+2021-11-25T21:53:41.266Z [api] info: Regions emissions factors API request started 
+2021-11-25T22:13:06.430Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T22:13:22.808Z [api] info: Regions emissions factors API request started 
+2021-11-25T22:13:22.816Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T22:13:22.821Z [cache] info: Using local cache file... 
+2021-11-25T22:13:23.881Z [api] info: Regions emissions factors API request started 
+2021-11-25T22:47:29.712Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T22:47:39.660Z [api] info: Regions emissions factors API request started 
+2021-11-25T22:47:39.669Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T22:47:39.673Z [cache] info: Using local cache file... 
+2021-11-25T22:47:41.760Z [api] info: Regions emissions factors API request started 
+2021-11-25T23:13:16.268Z [server] info: Cloud Carbon Footprint Server listening at http://localhost:4010 
+2021-11-25T23:13:20.974Z [api] info: Regions emissions factors API request started 
+2021-11-25T23:13:20.983Z [api] info: Footprint API request started with Start Date: 2020-11-25 and End Date: 2021-11-25 
+2021-11-25T23:13:20.988Z [cache] info: Using local cache file... 
+2021-11-25T23:13:22.116Z [api] info: Regions emissions factors API request started 

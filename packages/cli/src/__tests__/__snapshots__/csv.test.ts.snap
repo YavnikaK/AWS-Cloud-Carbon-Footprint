@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`csv test formats table into csv file 1`] = `
+"Date (UTC),SUM kilowatt hours,SUM metric tons CO2e Emissions
+Total,0.00,0.000000
+"
+`;

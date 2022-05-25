@@ -1,0 +1,133 @@
+{
+  "name": "@cloud-carbon-footprint/client",
+  "version": "2.1.1",
+  "license": "Apache-2.0",
+  "description": "The front-end dashboard for Cloud Carbon Footprint.",
+  "homepage": "https://www.cloudcarbonfootprint.org/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud-carbon-footprint/cloud-carbon-footprint",
+    "directory": "packages/client"
+  },
+  "keywords": [
+    "thoughtworks",
+    "cloud",
+    "sustainability",
+    "climate",
+    "carbon-emissions",
+    "carbon-footprint"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "@cloud-carbon-footprint/common": "^1.2.0",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.35",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@types/lodash": "^4.14.169",
+    "apexcharts": "^3.26.3",
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "ramda": "^0.27.1",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-dates": "^21.8.0",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-test-renderer": "^17.0.2",
+    "styled-components": "^5.3.0",
+    "typescript": "^4.3.5"
+  },
+  "proxy": "http://localhost:4010",
+  "scripts": {
+    "precommit": "lint-staged --no-stash && yarn test --coverage --runInBand --bail",
+    "start": "react-scripts start",
+    "start-with-mock-data": "concurrently \"yarn start\" \"yarn start-stub-server\"",
+    "sonar:scan": "sonar-scanner",
+    "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
+    "build:workspace": "mkdir -p ../../dist-workspace/packages/client/build && cp -R build ../../dist-workspace/packages/client && cp package.json ../../dist-workspace/packages/client && cp index.js ../../dist-workspace/packages/client",
+    "build:update": "node ../../scripts/update-package-dependencies.js client common",
+    "test": "react-scripts --expose-gc test --watchAll=false",
+    "test:snapshot": "yarn test -u",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix ./src/",
+    "start-stub-server": "json-server stub-server/test.json --port 4010 --routes stub-server/routes.json",
+    "start:webprod": "node index.js",
+    "clean": "rimraf build && rimraf coverage && rimraf logs"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.0.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/react-hooks": "^7.0.0",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^27.0.1",
+    "@types/mockdate": "^3.0.0",
+    "@types/node": "^16.0.1",
+    "@types/ramda": "^0.27.40",
+    "@types/react": "^17.0.6",
+    "@types/react-dates": "^21.8.2",
+    "@types/react-dom": "^17.0.5",
+    "@types/react-router": "^5.1.14",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "concurrently": "^6.3.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-unused-imports": "^1.1.1",
+    "immer": "^9.0.2",
+    "jest": "26.6.0",
+    "json-server": "^0.17.0",
+    "lint-staged": "^11.0.1",
+    "mockdate": "^3.0.5",
+    "prettier": "^2.3.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint",
+      "prettier --write --ignore-unknown --config ../../.prettierrc.json"
+    ],
+    "*.{md}": [
+      "prettier --write --ignore-unknown --config ../../.prettierrc.json"
+    ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 98,
+        "branches": 92,
+        "functions": 97,
+        "lines": 98
+      }
+    },
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/index.ts",
+      "<rootDir>/src/.*/index.ts"
+    ]
+  }
+}

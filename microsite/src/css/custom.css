@@ -1,0 +1,121 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: #146133;
+  --ifm-navbar-link-hover-color: #ffffff;
+}
+
+html[data-theme='light'] {
+  --ifm-link-color: #146133;
+  --ifm-menu-color-active: #146133;
+  --ifm-color-primary: #146133;
+}
+
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar__brand {
+  text-decoration: none;
+}
+
+.navbar__title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: 'Helvetica';
+  font-weight: 400;
+}
+
+.navbar__logo {
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.navbar__link--active,
+.navbar__link--active:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar__toggle > svg {
+  color: white;
+}
+
+.home__subsection-title {
+  color: #067a3e;
+  text-align: center;
+  font-size: 24pt;
+  letter-spacing: 2pt;
+  font-weight: bold;
+}
+
+.home__subsection-box-format {
+  background-color: #fafafa;
+  padding: 4rem 2rem 3rem;
+}
+
+.navbar__link {
+  color: white;
+  margin-right: -10px;
+}
+
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
+  height: auto !important;
+}
+
+.react-toggle {
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.menu__link,
+.button__link,
+.table-of-contents__link {
+  text-decoration: none;
+}
+
+.button__link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar__title {
+    font-size: 1.3rem;
+    line-height: 22px;
+  }
+
+  .navbar__link {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .navbar__title {
+    font-size: 1rem;
+  }
+  .navbar__logo {
+    margin-right: 10px;
+  }
+}

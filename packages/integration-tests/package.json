@@ -1,0 +1,35 @@
+{
+  "name": "@cloud-carbon-footprint/integration-tests",
+  "version": "1.1.1",
+  "private": true,
+  "description": "Test repository to run integration tests",
+  "scripts": {
+    "start": "concurrently \"yarn start-client\" \"yarn start-api\"",
+    "start-client": "BROWSER=none REACT_APP_PREVIOUS_YEAR_OF_USAGE=true yarn workspace @cloud-carbon-footprint/client start",
+    "start-api": "USE_TEST_CACHE=true yarn workspace @cloud-carbon-footprint/api start",
+    "headless": "testcafe 'chromium:headless' 'tests/*test.js'",
+    "headed": "testcafe 'chrome'",
+    "precommit": "lint-staged --no-stash && yarn headless",
+    "lint": "eslint '*/*.js' --quiet",
+    "lint:fix": "eslint '*/*.js' --quiet --fix",
+    "clean": "rimraf screenshots"
+  },
+  "devDependencies": {
+    "@testing-library/testcafe": "^4.4.0",
+    "concurrently": "^6.3.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "lint-staged": "^11.0.1",
+    "prettier": "^2.3.0",
+    "testcafe": "^1.14.2",
+    "wait-on": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint",
+      "prettier --write --ignore-unknown --config ../../.prettierrc.json"
+    ]
+  }
+}

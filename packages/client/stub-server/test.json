@@ -1,0 +1,53 @@
+{
+    "emissions": [
+        {
+        "region": "us-east-1",
+        "mtPerKwHour": 0.0004545
+        },
+        {
+            "region": "eu-west-1",
+            "mtPerKwHour": 0.000351533
+        },
+        {
+            "region": "ap-northeast-1",
+            "mtPerKwHour": 0.000506
+        }
+    ],
+    "footprint": [
+        {
+          "timestamp": "2021-01-09T00:00:00.000Z",
+          "serviceEstimates": [
+            {
+              "cloudProvider": "AWS",
+              "accountName": "aws account 0",
+              "serviceName": "AmazonS3",
+              "kilowattHours": 0.00245179589999999,
+              "co2e": 2,
+              "cost": 2.0611247334106126,
+              "region": "us-east-1",
+              "usesAverageCPUConstant": false
+            },
+            {
+              "cloudProvider": "AWS",
+              "accountName": "aws account 0",
+              "serviceName": "CloudTrail",
+              "kilowattHours": 5.22E+07,
+              "co2e": 2,
+              "cost": 2.0611247334106126,
+              "region": "us-east-1",
+              "usesAverageCPUConstant": false
+            },
+            {
+              "cloudProvider": "AWS",
+              "accountName": "aws account 0",
+              "serviceName": "AmazonSNS",
+              "kilowattHours": 3682,
+              "co2e": 2,
+              "cost": 2.0611247334106126,
+              "region": "ap-northeast-1",
+              "usesAverageCPUConstant": false
+            }
+        ]
+    }
+  ]
+}
